@@ -22,10 +22,12 @@ public class calculator {
             case "*":
                 System.out.println(+(x * y));
                 break;
-            case "/":
-                System.out.println(+(x / y));
-                if (y == 0)
-            {System.out.println("на ноль не делить");
+            case "/":  ;
+
+            if( y == 0 ) ;{ System.out.println("делить на ноль нельзя!");
+                if(y>0)
+                    System.out.println(+(x / y));
+            ;
 
             break;}
 
