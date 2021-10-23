@@ -18,20 +18,19 @@ public class Bingo {
             if ( y ==666){System.out.println("Досрочный выход");}
             break;}
 
-        while ( attempt< MAX_ATTEMPT) {attempt++;
+        while ( attempt< MAX_ATTEMPT){ {attempt++;
             y = scan.nextInt();
             if ( y > x){System.out.println("загадай число меньше");}
             else if ( y < x){System.out.println("загадай число больше");}
             else  {System.out.println("Бинго! Угадали с " + attempt + "  попытки");}
-            continue;};
-        {System.out.println("Досрочный выход");}
-        break;
+            continue;}}}}
 
 
 
 
 
-        }
+
+
 
 
 
