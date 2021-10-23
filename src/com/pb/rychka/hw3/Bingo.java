@@ -11,19 +11,22 @@ public class Bingo {
         final int  MAX_ATTEMPT=101;
         int attempt = 0;
     Scanner scan = new Scanner(System.in);
-    System.out.println("введите   число   и затем єнтер");int y;
-    while ( true ){
+    System.out.println("введите   число   и затем єнтер");
 
-            y = scan.nextInt();
-            if ( y ==666){System.out.println("Досрочный выход");}
-            break;}
 
-        while ( attempt< MAX_ATTEMPT){ {attempt++;
-            y = scan.nextInt();
-            if ( y > x){System.out.println("загадай число меньше");}
-            else if ( y < x){System.out.println("загадай число больше");}
-            else  {System.out.println("Бинго! Угадали с " + attempt + "  попытки");}
-            continue;}}}}
+        while ( attempt< MAX_ATTEMPT){ attempt++;
+            int y;  y = scan.nextInt();
+
+            if (y >x) {System.out.println("загадай число меньше");}
+            if ( y < x){System.out.println("загадай число больше");}
+            if( y ==666){System.out.println("Досрочный выход"); break;}
+            if  ( y == x){System.out.println("Бинго! Угадали с " + attempt + "  попытки");break;}
+
+
+
+            }
+    }
+}
 
 
 
