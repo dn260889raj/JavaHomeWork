@@ -14,20 +14,19 @@ public class Array
     for (int i = 0; i < 10; i++) {
         System.out.print (" " + array[i]);}
 
-      int sum=0;int k=0;
-    for ( int d : array){
-        sum = sum+d;k++;
-
+      int sum=0;
+      for ( int d : array)
+        sum = sum+d;
         System.out.println("   Сумма элементов массива равна: " + sum  );
-        int counter = 0;
-        for(int i = 0; i<10; i++)
-        {
+      int counter = 0;
+      for(int i = 0; i<10; i++){
+
             if(array[i] > 0)
                 counter += 1;
-        }
-        System.out.println("кол-во положительных "  + counter);{
+
+        System.out.println("кол-во положительных "  + counter);
             break;}
-    }
+
     //МЕТОД ПУЗЫРЬКОВОЙ СОРТИРОВКИ
     boolean sort= false;
     while(!sort){ sort=true;
