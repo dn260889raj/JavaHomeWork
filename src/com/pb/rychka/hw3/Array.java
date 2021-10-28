@@ -14,10 +14,7 @@ public class Array
     for (int i = 0; i < 10; i++) {
         System.out.print (" " + array[i]);}
 
-      int sum=0;
-      for ( int d : array)
-        sum = sum+d;
-        System.out.println("   Сумма элементов массива равна: " + sum  );
+
       int counter = 0;
       for(int i = 0; i<10; i++){
 
@@ -25,7 +22,12 @@ public class Array
                 counter += 1;
 
         System.out.println("кол-во положительных "  + counter);
-            break;}
+            }
+
+    int sum=0;
+    for ( int i : array){
+        sum = sum+array [i];
+        System.out.println("   Сумма элементов массива равна: " +  sum  + "kjk" );}
 
     //МЕТОД ПУЗЫРЬКОВОЙ СОРТИРОВКИ
     boolean sort= false;
